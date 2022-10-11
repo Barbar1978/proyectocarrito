@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/df59baf6b8.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>carrito-ecommerce-LUCIRTE</title>
+   
+</head>
+<body>
+    <header>
+        <h1 id="titulo" class="titulo">LUCIRTE</h1>
+        <button id="boton-carrito"><i class="fas fa-shopping-cart"></i><span id="contadorCarrito">0</span></button>
+    </header>
+
+    <select id="filtroTalle">
+        <option value="all">Todos</option>
+        <option value="L">Large</option>
+        <option value="M">Medium</option>
+        <option value="S">Small</option>
+    </select>
+
+
+    <main id="contenedor-productos">
+        <main class="mainindex"></main>
+        <section class="hero">
+            <h2>ACCESORIOS CON ESTILO</h2>
+            <p>Estilo, Moda y Calidad</p>
+            <p>El equilibrio perfecto</p>
+            <a href="" class="btn btn-outline">Hace tu pedido</a>
+        </section>
+    
+    <div class="modal-contenedor">
+        <div class="modal-carrito">
+            <h3>Carrito</h3>
+            <button id="carritoCerrar"><i class="fas fa-times-circle"></i></button>
+            <div id="carrito-contenedor">
+                <!-- <div class="productoEnCarrito">
+                    <p>Buzo 1</p>
+                    <p>Precio: $1200</p>
+                    <button class="boton-eliminar"><i class="fas fa-trash-alt"></i></button>
+                </div> -->
+            </div>
+            <p class="precioProducto">Precio total: $<span id="precioTotal">0</span></p>
+            <button id="vaciar-carrito" class="boton-agregar">Vaciar carrito</button>
+        </div>
+    </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <div data-aos="zoom-in">
+                <a href="#default" class="logo">LUCIRTE</a>
+                <div class="redes-right">
+                    <div class="instagram">
+                        <a href="index.html" target="_blank" class="ico"><img src="./img/modelo43.png"
+                                alt="Instagram"></a>
+                    </div>
+                    <div class="facebook">
+                        <a href="index.html" target="_blank" class="ico"><img src="./img/modelo47.png"
+                                alt="Facebook"></a>
+                    </div>
+                    <div class="twitter">
+                        <a href="index.html" target="_blank" class="ico"><img src="./img/modelo45.png"
+                                alt="Twitter"></a>
+                    </div>
+                    <div class="watsapp">
+                        <a href="index.html" target="_blank" class="ico"><img src="./img/modelo60.png"
+                                alt="watsapp"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/df59baf6b8.js" crossorigin="anonymous"></script>
+    <script defer src="js/stock.js"></script>
+    <script defer src="js/modal.js"></script>
+    <script defer src="js/app.js"></script>
+</body>
+</html>
